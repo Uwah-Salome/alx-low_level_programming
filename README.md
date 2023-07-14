@@ -17,3 +17,5 @@ executable file.
 ### Variables & Data Types
 Each variable in C has an associated data type. It specifies the type of data that the variable can store like integer, character, floating, double, etc. Each data type requires different amounts of memory and has some specific operations which can be performed over it. The data type is a collection of data with values having fixed values, meaning as well as its characteristics.
 * check out https://www.geeksforgeeks.org/data-types-in-c/
+
+* Referencehttps://intranet.alxswe.com/rltoken/P01aLj9BDfDUOv-y9x82Yw
