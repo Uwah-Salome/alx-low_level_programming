@@ -6,15 +6,14 @@
  */
 int main(void)
 {
-	char lowcase = 'a';
-	char uppercase = 'A';
+	int lowcase = 97;
+	int uppercase = 65;
 
-	for (;lowcase <= 'z'; lowcase++)
+	while (lowcase <= 122)
 	{
 		putchar(lowcase);
 	}
-	putchar('\n');
-	for (;uppercase <= 'Z'; uppercase++)
+	while (uppercase >= 90)
 	{
 		putchar(uppercase);
 	}
