@@ -7,11 +7,12 @@
   */
 int main(void)
 {
-	char alphabet = 'a';
+	int lowcase = 97;
 
-	for (; alphabet <= 'z'; alphabet++)
+		while (lowcase <= 122)
 	{
-		putchar(alphabet);
+		putchar(lowcase);
+		lowcase++;
 	}
 	putchar('\n');
 	return (0);
