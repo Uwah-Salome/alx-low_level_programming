@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  *_islower - Entry point
+  *_abs - Entry point
   *@c: the alphabets in lower case
   *Return: 1 (success)
   */
@@ -17,5 +17,3 @@ int _abs(int c)
 	}
 	return (c);
 }
-	
-
