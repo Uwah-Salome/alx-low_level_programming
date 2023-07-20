@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
-  *main - Entry point
-  *Description: Print _putchar
+  *print_square - Entry point
+  *Description: Print Square
+  *@size: number of parameter to be checked
   *Return: 0 (success)
   */
 void print_square(int size)
