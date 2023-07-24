@@ -2,7 +2,9 @@
 
 /**
   *swap_int - Entry point
-  *Description: Print _putchar
+  *Description: a function that swaps the values of two integers
+  *@a: Parameter one
+  *@b: parameter two
   *Return: 0 (success)
   */
 void swap_int(int *a, int *b)
