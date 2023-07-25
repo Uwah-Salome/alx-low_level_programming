@@ -8,10 +8,21 @@
   */
 void puts2(char *str)
 {
+	int a, b = 0;
+	int d;
+
 	while (*str != '\0')
 	{
-		putchar(*str);
-		str += 2;
+		str++;
+		a++;
+	}
+	b = a - 1;
+	for (d = 0; d <= b; d++)
+	{
+		if (d % 2 == 0)
+		{
+			putchar(str[d]);
+		}
 	}
 	putchar('\n');
 }
