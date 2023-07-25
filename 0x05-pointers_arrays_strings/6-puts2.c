@@ -1,5 +1,5 @@
+#include "main.h"
 #include <stdio.h>
-
 /**
   *puts2 - Entry point
   *Description:print every other character of a string using putst2
