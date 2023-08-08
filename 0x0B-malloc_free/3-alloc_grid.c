@@ -2,18 +2,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 /**
-  *alloc_grid - Entry point
-  *Description: a function that fills memory with a constant byte.
-  *@width: parameter one
-  *@height: parameter two
-  *Return: 0 (success)
-  */
+ * alloc_grid - Allocates and initializes a 2D grid of integers.
+ * @width: The width of the grid.
+ * @height: The height of the grid.
+ * Return: A pointer to the allocated 2D grid, or NULL on failure.
+ */
 int **alloc_grid(int width, int height)
 {
-	int **grid;
-	int w, h;
+	int **grid, w, h;
 
 	if (width <= 0 || height <= 0)
 	{
@@ -24,25 +21,30 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
+	h = 0;
+
 	while (h < height)
 	{
 		grid[h] = (int *)malloc(width * sizeof(int));
-		++h;
 		if (grid[h] == NULL)
 		{
-			while (w < h)
+			while (h >= 0)
 			{
-				free(grid[w]);
-				++w;
+				free(grid[h]);
+				h--;
 			}
 			free(grid);
 			return (NULL);
 		}
+		w = 0;
+
 		while (w < width)
 		{
+
 			grid[h][w] = 0;
-			++w;
+			w++;
 		}
+		h++;
 	}
 	return (grid);
 }
