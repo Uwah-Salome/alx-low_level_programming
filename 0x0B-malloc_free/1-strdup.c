@@ -7,8 +7,7 @@
   *Dscptn:function that returns a pointer to a newly allocated space in memory
   *@str: parameter one
   *Return: 0 (success)
-  */ 
-
+  */
 char *_strdup(char *str)
 {
 	char *duplicate;
