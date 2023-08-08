@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,8 +13,7 @@
 int **alloc_grid(int width, int height)
 {
 	int **grid;
-	int w = 0;
-	int h = 0;
+	int w, h;
 
 	if (width <= 0 || height <= 0)
 	{
@@ -30,13 +30,13 @@ int **alloc_grid(int width, int height)
 		++h;
 		if (grid[h] == NULL)
 		{
-		while (h < w)
-		{
-			free(grid[h]);
-			++h;
-		}
-		free(grid);
-		return (NULL);
+			while (w < h)
+			{
+				free(grid[w]);
+				++w;
+			}
+			free(grid);
+			return (NULL);
 		}
 		while (w < width)
 		{
