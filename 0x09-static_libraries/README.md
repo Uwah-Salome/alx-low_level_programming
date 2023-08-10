@@ -2,7 +2,16 @@
 A static library is a file containing a collection of object files (*.o) 
 that are linked into the program during the linking phase of compilation and are not relevant during runtime
 
-## Files
+## Note: 
+When a program is compiled, the compiler generates an object file from a source file. 
+After generating the object file, the compiler also invokes the Linker. 
+The role of the linker, in this case, is to copy the code of the library to our object file.
+Basically, static libraries are just a collection of object files that are merged by the linker 
+with another object file to form a final executable.
+
+Conventionally, they start with “lib” and end with “.a” or “.lib” (depending on your platform).
+
+## Files Created:
 * libmy.a
 * main.h
 * 0-isupper.o
@@ -25,3 +34,5 @@ that are linked into the program during the linking phase of compilation and are
 * 6-abs.o
 * 9-strcpy.o
 * _putchar.o
+
+### For more Resources check: https://tinyurl.com/e2tw7wp5
